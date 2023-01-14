@@ -91,7 +91,7 @@ jobs:
 
   release-update:
     needs: release
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     if: |
       startsWith(github.ref, 'refs/tags/v')
     steps:
